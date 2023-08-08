@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "general sans";
+}
+
+html,body{
+    height: 100vh;
+    width: 100%;
+}
+
+#minicircle{
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  z-index: 99999;
+  border-radius: 50%;
+  background-color: white;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+.bounding{
+  width: fit-content;
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+.bounding .boundingelem{
+  transform: translateY(100%);
+}
+
+#main{
+    width: 100%;
+    background-color: black;
+}
+
+#hero{
+  position: relative;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    padding: 1.6vh;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+
+}
+
+#nav a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#heading{
+    margin-top: 90px;
+}
+
+#heading h1{
+    margin-left: 30px;
+    font-size: 10vw;
+    text-transform: uppercase;
+    /* font-family: "General Sans Medium"; */
+    line-height: .9;
+    opacity: .6;
+    font-weight: 1000;
+} 
+
+#heading #secondh1{
+    margin-left: 230px;
+}
+
+.blockText{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    /* background-color: yellow; */
+}
+
+.blockText h5{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+  #chhotiheadings{
+    margin-top: 100px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  #chhotiheadings h5{
+    text-align: right;
+    margin-top: 0.5vw;
+    text-transform: uppercase;
+    font-size: 1vw;
+  }
+
+  #heroFooter{
+    padding: 0 2vw;
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  #heroFooter a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  #heroFooter #iconset{
+    display: flex;
+    gap: 5px;
+    padding-right: 20px;
+  }
+
+  #heroFooter .circle{
+    width: 25px;
+    height: 25px;
+    /* border-radius: 50%;
+    background-color: #888; */
+  }
+
+  #second{
+    padding-right: 12vw;
+    padding-top: 200px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+  }
+
+  .elem{
+    border-top: 1px solid #888;
+    width: 100%;
+    padding: 4vw 3vw;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .elem h1{
+    text-transform: uppercase;
+    font-size: 7.6vw;
+    opacity: .6;
+  }
+
+  .elemlast{
+    border-bottom: 1px solid #888;
+  }
+
+  .elem img{
+    z-index: 999;
+    height: 140%;
+    opacity: 0;
+    position: absolute;
+
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
+
+  #about{
+    padding: 30vw 10vw;
+    padding-bottom: 12vw;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 70px;
+    padding-left: 40vw;
+
+  }
+
+  #about img{
+    width: 250px;
+  }
+
+
+  #textabout{
+    width: 27rem;
+    font-size: 17px;
+  }
+
+  #textabout h5{
+    text-transform: uppercase;
+    opacity: .6;
+    margin-bottom: 2px;
+  }
+
+  #textabout p{
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+
+
+  #textabout a{
+    padding: 12px 22px;
+    border: 1px solid white;
+    border-radius: 100px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  #subscribe{
+    color: white;
+    padding: 20px 30px;
+    background-color: black;
+    padding-bottom: 7vw;
+  }
+
+  #subscribe h5{
+    text-transform: uppercase;
+    opacity: .6;
+  }
+
+  #subscribe h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  #footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    /* padding: 20px 30px; */
+    color: white;
+    padding: 40px 30px;
+  }
+
+  #footerleft{
+    display: flex;
+    gap: 20px;
+  }
+
+  #footerright{
+    display: flex;
+    gap: 30px;
+  }
+
+  #footer a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  #second h5{
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
